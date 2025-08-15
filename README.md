@@ -118,7 +118,6 @@ You can modify the preprocessing scripts to handle new datasets by changing:
 - CNN extracts features per auscultation site.  
 - Demographic MLP adds patient-level info.  
 - Attention layer combines multi-location embeddings.  
-- Accuracy: **0.84**, F1-score: **0.83**  
 
 ---
 
@@ -130,7 +129,7 @@ You can modify the preprocessing scripts to handle new datasets by changing:
 
 ---
 
-## 9. Preliminary Results  
+## 9. Preliminary Test Results  
 
 | Model                   | AUC      | Accuracy | F1-score |
 |-------------------------|----------|----------|----------|
