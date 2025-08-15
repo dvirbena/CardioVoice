@@ -1,5 +1,7 @@
 # 00460217 - CardioVoice: Detecting Cardiovascular Risks from Heart Sounds
 
+![CardioVoice Diagram](Figures/cardiovoice_diagram.png)
+
 ## Introduction
 CardioVoice is a deep learning system for detecting heart murmurs and predicting clinical outcomes from pediatric phonocardiogram (PCG) recordings. The recordings are collected from multiple auscultation locations and combined with demographic patient data.
 
@@ -45,7 +47,9 @@ Develop an automated, non-invasive murmur detection model that can operate in no
 ## Experiments
 
 ### Dataset
-- **Source:** PhysioNet George B. Moody Challenge 2022
+- **Source:** PhysioNet George B. Moody Challenge 2022  
+  - [Dataset page](https://physionet.org/content/circor-heart-sound/1.0.3/)  
+  - [Download link](https://physionet.org/content/circor-heart-sound/get-zip/1.0.3/)  
 - **Size:** 5272 recordings, 1568 subjects (ages 0–21)
 - **Locations:** AV, PV, TV, MV
 - **Labels:** Murmur (Present/Absent/Unknown), Clinical Outcome (Normal/Abnormal)
@@ -56,6 +60,7 @@ Develop an automated, non-invasive murmur detection model that can operate in no
 - Baselines: CNN (audio only), MLP (demographics only)
 
 ### Results
+
 | Model                   | Accuracy | F1-score |
 |-------------------------|----------|----------|
 | CNN (audio only)        | 0.78     | 0.76     |
@@ -66,6 +71,12 @@ Observations:
 - Demographics improve classification performance.
 - Multi-head attention helps when combining multiple locations.
 - Zero-padding works for missing locations.
+
+#### Training and Validation Curves
+![Training and Validation Loss and Accuracy](Figures/images/output.png)
+
+#### Confusion Matrix
+![Confusion Matrix](Figures/output_confusion.png)
 
 ## Conclusion
 The CNN+MLP+Attention architecture outperforms simpler baselines and works in noisy, multi-location PCG data.
@@ -80,4 +91,3 @@ The CNN+MLP+Attention architecture outperforms simpler baselines and works in no
 2. Potes, C. et al., Ensemble methods for abnormal heart sound detection
 3. Reyna, M.A. et al., PhysioNet Challenge 2022
 4. Chollet, F., Xception: Deep Learning with Depthwise Separable Convolutions, CVPR 2017
-
