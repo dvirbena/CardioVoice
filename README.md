@@ -146,10 +146,13 @@ You can modify the preprocessing scripts to handle new datasets by changing:
 
 ---
 
-## 10. Conclusions  
-The fusion-based CNN+MLP+Attention approach outperforms simpler baselines for pediatric heart sound analysis. The method handles missing data, integrates multiple data types, and is robust to noise.  
+## 10. Conclusions
+In this work, we explored a novel fusion-based CNN + MLP + Attention architecture for pediatric heart sound analysis, integrating multi-location auscultation signals with demographic features. While the final accuracy did not surpass some simpler baselines, our approach demonstrates a new way of handling missing-location data and combining heterogeneous inputs in a unified end-to-end model.
 
-**Future Work:**  
-- CRNN or Transformer-based temporal modeling  
-- Self-supervised pretraining  
-- Lightweight deployment-ready models  
+The results suggest that this architecture is capable of learning meaningful patterns across both acoustic and demographic modalities, but also highlight the difficulty of the pediatric heart sound classification task—especially with limited, noisy, and imbalanced datasets. Importantly, the methodology developed here can serve as a foundation for future improvements, rather than an endpoint.
+
+**Future Work:**
+- CRNN or Transformer-based temporal modeling
+- Self-supervised pretraining
+- Lightweight deployment-ready models
+
