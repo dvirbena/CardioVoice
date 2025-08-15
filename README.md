@@ -14,11 +14,10 @@ This project aims to develop an automated, non-invasive heart murmur detection s
 5. [Model Architecture](#5-model-architecture)  
    - [5.1 CNN for Spectrograms](#51-cnn-for-spectrograms)  
 6. [Training Approach](#6-training-approach)  
-7. [Naive Approach](#7-naive-approach)  
-8. [Better Approach](#8-better-approach)  
-9. [Training Details](#9-training-details)  
-10. [Preliminary Results](#10-preliminary-results)  
-11. [Conclusions](#11-conclusions)  
+7. [Better Approach](#7-better-approach)  
+8. [Training Details](#8-training-details)  
+9. [Preliminary Results](#9-preliminary-results)  
+10. [Conclusions](#10-conclusions)  
 
 ---
 
@@ -40,6 +39,7 @@ CardioVoice is a deep learning system for detecting heart murmurs and predicting
 - **CardioVoice.ipynb** – Complete notebook version of the project, recommended for Google Colab.  
 
 **Python scripts:**  
+We divided the coding cells into `.py` files if you prefer running the project this way. The order is as follows:  
 1. `data_loading_and_preprocessing.py` – Data reading, filtering, segmentation, and feature extraction.  
 2. `model.py` – Contains CNN, MLP, and Attention modules.  
 3. `training_funcs.py` – Functions for loss calculation, evaluation, and metrics.  
@@ -112,15 +112,7 @@ You can modify the preprocessing scripts to handle new datasets by changing:
 
 ---
 
-## 7. Naive Approach  
-**Audio only:**  
-- CNN model using only spectrogram data.  
-- Accuracy: **0.78**  
-- F1-score: **0.76**  
-
----
-
-## 8. Better Approach  
+## 7. Better Approach  
 **Audio + Demographics + Multi-head Attention:**  
 - CNN extracts features per auscultation site.  
 - Demographic MLP adds patient-level info.  
@@ -129,7 +121,7 @@ You can modify the preprocessing scripts to handle new datasets by changing:
 
 ---
 
-## 9. Training Details  
+## 8. Training Details  
 - **Epochs:** Tuned with early stopping  
 - **Batch size:** Configurable (default 32)  
 - **Learning rate:** Optimized with scheduler  
@@ -137,12 +129,10 @@ You can modify the preprocessing scripts to handle new datasets by changing:
 
 ---
 
-## 10. Preliminary Results  
+## 9. Preliminary Results  
 
 | Model                   | Accuracy | F1-score |
 |-------------------------|----------|----------|
-| CNN (audio only)        | 0.78     | 0.76     |
-| MLP (demo only)         | 0.62     | 0.59     |
 | CNN + MLP + Attention   | 0.84     | 0.83     |
 
 **Observations:**  
@@ -156,7 +146,7 @@ You can modify the preprocessing scripts to handle new datasets by changing:
 
 ---
 
-## 11. Conclusions  
+## 10. Conclusions  
 The fusion-based CNN+MLP+Attention approach outperforms simpler baselines for pediatric heart sound analysis. The method handles missing data, integrates multiple data types, and is robust to noise.  
 
 **Future Work:**  
