@@ -52,8 +52,9 @@ We divided the coding cells into `.py` files if you prefer running the project t
 
 ### Steps to Run  
 1. Upload the dataset file into the notebook.  
-2. (Optional) Mount Google Drive in Google Colab for persistent storage.  
-3. Run all notebook cells to preprocess, train, and evaluate the model.  
+2. (Optional) Mount Google Drive in Google Colab for persistent storage.
+3. Set your data path correctly in usage.py
+4. Run all notebook cells to preprocess, train, and evaluate the model.  
 
 ### Custom Dataset Generation  
 You can modify the preprocessing scripts to handle new datasets by changing:  
