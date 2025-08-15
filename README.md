@@ -73,7 +73,7 @@ Observations:
 - Zero-padding works for missing locations.
 
 #### Training and Validation Curves
-![Training and Validation Loss and Accuracy](Figures/images/output.png)
+![Training and Validation Loss and Accuracy](Figures/output.png)
 
 #### Confusion Matrix
 ![Confusion Matrix](Figures/output_confusion.png)
