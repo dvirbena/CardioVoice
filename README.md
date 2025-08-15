@@ -2,6 +2,8 @@
 
 This project aims to develop an automated, non-invasive heart murmur detection system using pediatric phonocardiogram (PCG) recordings and demographic data. The model combines CNN-based spectrogram analysis with multi-head attention and demographic features to predict clinical outcomes, even in noisy, real-world environments.
 
+![CardioVoice Diagram](Figures/cardiovoice_diagram.png)
+
 ---
 
 ## Table of Contents  
