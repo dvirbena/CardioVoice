@@ -2,8 +2,7 @@
 
 # Example usage and training script
 if __name__ == "__main__":
-    # Set your data directory path here
-    DATA_DIR = "C:\\Users\\Yosss\\Desktop\\the-circor-digiscope-phonocardiogram-dataset-1.0.3\\the-circor-digiscope-phonocardiogram-dataset-1.0.3\\training_data"
+    DATA_DIR = ".\\training_data" #SET YOUR DATA DIRECTORY HERE
     
     # Check if directory exists (comment out if you want to skip this check)
     if not os.path.exists(DATA_DIR):
