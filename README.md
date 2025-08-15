@@ -141,8 +141,8 @@ You can modify the preprocessing scripts to handle new datasets by changing:
 - Zero-padding for missing data is effective.  
 
 **Visuals:**  
-- ![Training and Validation Curves](Figures/output.png)  
-- ![Confusion Matrix](Figures/output_confusion.png)  
+![Training and Validation Curves](Figures/output.png)  
+![Confusion Matrix](Figures/output_confusion.png)  
 
 ---
 
