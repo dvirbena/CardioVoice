@@ -140,7 +140,7 @@ You can modify the preprocessing scripts to handle new datasets by changing:
 - Attention improves fusion of multiple locations.  
 - Zero-padding for missing data is effective.  
 
-**Visuals:**  
+**Results Visuals:**  
 - ![Training and Validation Curves](Figures/output.png)  
 - ![Confusion Matrix](Figures/output_confusion.png)  
 
