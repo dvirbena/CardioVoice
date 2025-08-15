@@ -132,9 +132,9 @@ You can modify the preprocessing scripts to handle new datasets by changing:
 
 ## 9. Preliminary Results  
 
-| Model                   | AUC | Accuracy | F1-score |
-|-------------------------|----------|----------|
-| Final Model   | 0.6093     | 0.5608     | 0.6029     |
+| Model                   | AUC      | Accuracy | F1-score |
+|-------------------------|----------|----------|----------|
+| Final Model             | 0.6093   | 0.5608   | 0.6029   |
 
 **Observations:**  
 - Demographics boost performance.  
